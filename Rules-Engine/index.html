@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine with AST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Rule Engine with AST</h1>
+    <div>
+        <h2>Create Rule</h2>
+        <input type="text" id="rule-input" placeholder="Enter rule string">
+        <button onclick="createRule()">Create Rule</button>
+        <pre id="rule-output"></pre>
+    </div>
+    <div>
+        <h2>Combine Rules</h2>
+        <textarea id="combine-input" placeholder="Enter rule strings, one per line"></textarea>
+        <button onclick="combineRules()">Combine Rules</button>
+        <pre id="combine-output"></pre>
+    </div>
+    <div>
+        <h2>Evaluate Rule</h2>
+        <textarea id="data-input" placeholder="Enter JSON data"></textarea>
+        <button onclick="evaluateRule()">Evaluate Rule</button>
+        <pre id="evaluate-output"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
